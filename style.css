@@ -79,7 +79,7 @@ h1{
     padding: 10px 12px 10px 12px;
 }
  .btn-skin:hover{
- 	border-radius: 10%;
+ /*	border-radius: 10%;*/
  	background-color: grey;
  }
  .navbar-header {
@@ -93,8 +93,8 @@ h1{
     font-size: 35px;
     
  }
- .link-hospial:hover{
- 	color: #4ACCD1;
+ .link-hospital:hover{
+ 	color: #ccc;
  }
  .navbar-header-head a{
  	text-decoration: none;
@@ -134,6 +134,13 @@ h1{
 	min-height: 500px; 
 	background-color: #fff;
 }
+
+hr{
+	width: 20%;
+	padding:0px;
+	color: #ccc;
+	
+}
 .serv-heading {
 	text-align: center;
 	font-size: 3rem;
@@ -169,17 +176,17 @@ h1{
 	background-repeat: no-repeat;
 	/*padding:200px 0px;*/
 	color: #fff;
-	min-height: 700px; 
+	min-height: 600px; 
 	
 }
 .testimonial-head {
 	color: #fff;
 	font-size:3rem;
-	padding:100px;
+	padding:80px;
 }
-.testimonial-head:hover {
+/*.testimonial-head:hover {
 	color:#3fbbc0;
-}
+}*/
 .carousel-head {
 	padding: 20px;
 }
@@ -196,7 +203,7 @@ h1{
 
 /* contact section*/
 #contact {
-	padding:200px 0px;
+	padding:100px 0px;
 	background-image: url("img/dummy/bg1.jpg");
 	background-size: cover; 
 	background-repeat: no-repeat;
@@ -275,29 +282,22 @@ h1{
 }
 
 @media (max-width: 900px){
-	/*.navbar-header-head{
-		padding:0px;
-		margin: 0px;
-	}*/
-	/*#intro{
-		padding: 20px 0px;
-	}*/
-	.link-hospital{
-		font-size: 14px;
+	
+	.link-hospital , .btn-app , .serv-icon{
+		font-size: 10px;
 	}
-	.btn-app {
-		font-size: 12px;	
-	}
-
-	 .serv-icon{
-		font-size: 12px;
+	.btn-app{
+		position: absolute;
+		top: 20px;
+		right: 120px;
 	}
 	.serv-img {
 		float: left;
 		overflow: hidden;
+
 	}
 	.top-area{
-		padding:0px;
+		padding:5px;
 	}
 	.top-area a{
 		font-size: 12px;
@@ -310,15 +310,48 @@ h1{
 		font-size: 18px;
 		margin-right: 5px;
 	}
-   
+	.carousel-head{
+		padding: 0px;
+	}
+
+   p {
+   	font-size: 14px;
+   }
+   #intro {
+   	padding-top: 10px;
+   }
     #services{
     	padding: 10px 0px;
     }
     #contact {
-    	padding: 10px 0px;
+    	padding: 20px 0px;
+    }
+    #testimonials {
+    	padding-bottom: 40px;
+    	min-height: 300px;
+    }
+    .widget {
+    	padding-bottom:40px;
+    }
+    .widget h1 {
+    	font-size: 18px;
+    }
+    .widget p {
+    	font-size: 14px;
+    	font-weight: bold;
     }
 
-	
+	.testimonial-head,.contact-main-head,.contact-head ,.serv-heading{
+		font-size: 25px;
+		padding: 10px 0px;
+	}
+	.serv-heading {
+		font-size: 25px;
+		padding: 20px 0px;
+	  }
+	  .carousel-head{
+	  	font-size: 18px;
+	  }
 }
 /*@media (min-width: 767px){
 	.serv-img {
