@@ -6,7 +6,7 @@
 
 	$(".intro-desc").animate({
 		height:200,
-		width:400, 
+		width:300, 
 		opacity:0.5
 	}, 3000 );
 
