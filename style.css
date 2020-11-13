@@ -169,12 +169,12 @@ hr{
 	margin-top: 30px;
 }
 
-#testimonials {
+/*#testimonials {
 	background-image: url("img/parallax/1.jpg");
 	background-size: cover;
 	text-align: center;
 	background-repeat: no-repeat;
-	/*padding:200px 0px;*/
+
 	color: #fff;
 	min-height: 600px; 
 	
@@ -184,9 +184,7 @@ hr{
 	font-size:3rem;
 	padding:80px;
 }
-/*.testimonial-head:hover {
-	color:#3fbbc0;
-}*/
+
 .carousel-head {
 	padding: 20px;
 }
@@ -199,6 +197,37 @@ hr{
 	padding: 10px;
 	display: block;
 }
+
+*/
+
+
+#testimonials {
+	padding: 100px;
+	background-image: url("img/parallax/1.jpg");
+	text-align: center;
+	color: #ccc;
+}
+.carousel-desc {
+	margin-bottom: 50px;
+	font-size: 1.5rem;
+	font-style: italic;
+	line-height: 1.5;
+}
+.carousel-img {
+  	margin: 20px 20px 30px;
+	width:15%;
+	border-radius:80%;
+	
+}
+/*.carousel-item  {
+	padding: 50px;
+	border:1px solid #ccc;
+}*/
+
+
+
+
+
 
 
 /* contact section*/
@@ -328,8 +357,14 @@ hr{
     }
     #testimonials {
     	padding-bottom: 40px;
-    	min-height: 300px;
+    	/*min-height: 300px;*/
     }
+    .carousel-desc {
+
+	font-size: 18px;
+	word-spacing: 1px;
+	
+}
     .widget {
     	padding-bottom:40px;
     }

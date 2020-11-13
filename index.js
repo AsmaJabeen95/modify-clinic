@@ -4,11 +4,11 @@
 	$(".main-head").fadeOut(1000).fadeIn(1000);
 	
 
-	$(".intro-desc").animate({
-		height:200,
-		width:300, 
-		opacity:0.5
-	}, 3000 );
+	// $(".intro-desc").animate({
+	// 	height:200,
+	// 	width:300, 
+	// 	opacity:0.5
+	// }, 3000 );
 
 // });
 
