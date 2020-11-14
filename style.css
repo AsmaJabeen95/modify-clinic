@@ -164,6 +164,8 @@ hr{
 	text-decoration: none;
 	color: #333;
 	
+	/*display: inline;*/
+	
 }
 .serv-icon-desc {
 	margin-top: 30px;
@@ -219,11 +221,6 @@ hr{
 	border-radius:80%;
 	
 }
-/*.carousel-item  {
-	padding: 50px;
-	border:1px solid #ccc;
-}*/
-
 
 
 
@@ -321,8 +318,9 @@ hr{
 		right: 120px;
 	}
 	.serv-img {
-		float: left;
+		/*float: left;*/
 		overflow: hidden;
+		display: none;
 
 	}
 	.top-area{
@@ -343,7 +341,7 @@ hr{
 		padding: 0px;
 	}
 
-   p {
+   p ,.contact-desc, .serv-desc{
    	font-size: 14px;
    }
    #intro {
@@ -363,8 +361,15 @@ hr{
 
 	font-size: 18px;
 	word-spacing: 1px;
+	/*width: 100%;*/
+	padding: 0px;
+	margin: 0px;
+	text-align: justify-all;
 	
-}
+	}
+	.carousel-inner{
+		width: 100%;
+	}
     .widget {
     	padding-bottom:40px;
     }
@@ -387,6 +392,10 @@ hr{
 	  .carousel-head{
 	  	font-size: 18px;
 	  }
+
+	  .carousel-img {
+	  	width: 50%;
+	  }
 }
 /*@media (min-width: 767px){
 	.serv-img {
@@ -395,11 +404,11 @@ hr{
 		overflow: hidden;
 	}
 
-	.navbar-header button {
+	/*.navbar-header button {
 		background-color: #fff;
 		padding: 5px 20px;
 		float: right;
-	}
+	}*/
 	
 }*/
 /*@media (min-width: 460px) and (max-width: 850px) {
