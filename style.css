@@ -22,7 +22,8 @@ h1{
 	font-weight: 500; 
 }
 .main-head {
-	font-family: 'Grandstander', cursive;
+	/*font-family: 'Grandstander', cursive;*/
+	font-weight: 700;
 }
 .navbar {
 	padding: 0.5rem 0rem;
@@ -215,13 +216,16 @@ hr{
 	font-style: italic;
 	line-height: 1.5;
 }
+
 .carousel-img {
   	margin: 20px 20px 30px;
 	width:15%;
 	border-radius:80%;
 }
+
 .testimonial-head {
 	margin-bottom: 40px;
+	font-size: 3rem;
 }
 
 
@@ -311,7 +315,7 @@ hr{
 
 @media (max-width: 900px){
 	
-	.link-hospital , .btn-app , .serv-icon{
+	.link-hospital .btn-app  .serv-icon{
 		font-size: 10px;
 	}
 	.btn-app{
@@ -320,7 +324,6 @@ hr{
 		right: 120px;
 	}
 	.serv-img {
-		/*float: left;*/
 		overflow: hidden;
 		display: none;
 
@@ -368,9 +371,7 @@ hr{
 	word-spacing: 1px;
 	
 	}
-	.carousel-inner{
-		width: 100%;
-	}
+	
     .widget {
     	padding-bottom:40px;
     }
@@ -382,8 +383,8 @@ hr{
     	font-weight: bold;
     }
 
-	.testimonial-head,.contact-main-head,.contact-head ,.serv-heading{
-		font-size: 25px;
+	.testimonial-head, .contact-main-head ,.contact-head, .serv-heading{
+		font-size: 2rem;
 		padding: 10px 0px;
 	}
 	.serv-heading {
@@ -399,102 +400,16 @@ hr{
 	  }
 }
 /*@media (min-width: 767px){
-	.serv-img {
-		float: left;
-		/*width: 80%;*/
-		overflow: hidden;
-	}
-
-	/*.navbar-header button {
-		background-color: #fff;
-		padding: 5px 20px;
-		float: right;
-	}*/
+	
 	
 }*/
 /*@media (min-width: 460px) and (max-width: 850px) {
-	.navbar-brand {
-		float: none;
-		display: block;
-		margin: 0 auto;
-		width: 100%;
-	}
-	.navbar-nav{
-		margin-bottom: 10px;
-	}
-	.navbar-header button {
-		
-		/*padding: 15px 20px;*/
-		float: right;
+
 	}
 
-	.serv-img {
-		overflow: hidden;
-		float: left;
-	}
-
-}*/
+	
 /*@media (max-width: 400px){
-	.fa-facebook{
-		font-size: 15px;
+	
 		padding: 5px;
-	}
-	.fa-twitter{
-		font-size: 15px;
-		padding: 5px;
-	}
-	.fa-instagram{
-		font-size: 15px;
-		padding: 5px;
-	}
-	.link-hospial {
-		font-size: 12px;
-	}
-	.btn-app {
-		font-size: 10px;	
-	}
-
-	.top-area {
-		padding: 0px;
-	}
-	.navbar-nav {
-		padding: 0px;
-	}
-	.navbar-brand {
-		float: none;
-		display: block;
-		margin: 0 auto;
-		width: 100%;
-		font-size: 20px;
-	}
-	#contact{
-		padding:10px 0px;
-	}
-	#services .serv-img{
-		width: 80%;
-		text-align: center;
-	}
-	.serv-heading{
-		font-size: 25px;
-	}
-	#testimonials .testimonial-head{
-		font-size: 25px;
-		padding-top:5px 0px 0px 0px;
-
-	}
-	#testimonials .carousel-head{
-		padding: 0px;
-	}
-	.widget h1{
-		font-size: 18px;
-	}
-	.widget p{
-		font-size: 15px;
-		font-weight: bold;	
 	}
 	
-	.sub-footer{
-		font-size: 12px;
-		/*display: inline-block;*/
-	}
-}*/
