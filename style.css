@@ -204,7 +204,7 @@ hr{
 
 
 #testimonials {
-	padding: 100px;
+	padding: 80px 20px 80px 20px;
 	background-image: url("img/parallax/1.jpg");
 	text-align: center;
 	color: #ccc;
@@ -219,7 +219,9 @@ hr{
   	margin: 20px 20px 30px;
 	width:15%;
 	border-radius:80%;
-	
+}
+.testimonial-head {
+	margin-bottom: 40px;
 }
 
 
@@ -341,9 +343,12 @@ hr{
 		padding: 0px;
 	}
 
-   p ,.contact-desc, .serv-desc{
+   p , .contact-desc ,.serv-desc{
    	font-size: 14px;
    }
+   /*.contact-desc {
+   	font-size: 14px;
+   }*/
    #intro {
    	padding-top: 10px;
    }
@@ -361,10 +366,6 @@ hr{
 
 	font-size: 18px;
 	word-spacing: 1px;
-	/*width: 100%;*/
-	padding: 0px;
-	margin: 0px;
-	text-align: justify-all;
 	
 	}
 	.carousel-inner{
