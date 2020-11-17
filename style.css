@@ -24,6 +24,7 @@ h1{
 .main-head {
 	/*font-family: 'Grandstander', cursive;*/
 	font-weight: 700;
+	font-size: 2rem;
 }
 .navbar {
 	padding: 0.5rem 0rem;
@@ -60,8 +61,9 @@ h1{
  }
 
 .fa-facebook {    
-    font-weight: 400;
-    background: #007bff;
+   font-weight: 400;
+    background: #55ACEE;
+    color: #FFF;
     font-size: 20px;
     padding: 10px 15px 10px 15px;
 }
@@ -90,7 +92,7 @@ h1{
 }
  .navbar-brand{
  	font-weight: 800;
-    font-size: 35px;
+    font-size: 2rem;
     
  }
  .link-hospital:hover{
@@ -114,11 +116,10 @@ h1{
 /* intro section*/
 
 #intro {
-	padding:100px 0px 50px 0px; 
+	padding:50px 0px 50px 0px; 
 	background-image: url("img/dummy/bg1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 600px;
 }
 .intro-desc p {
 	border:1px solid transparent;
@@ -126,6 +127,7 @@ h1{
 	background-color: white;
 	color: black;
 	line-height: 1.8;
+	font-size: 16px;
 }
 
 /* services section*/
@@ -133,6 +135,11 @@ h1{
 	padding:80px 0px 20px 0px;
 	/*min-height: 500px; */
 	background-color: #fff;
+}
+.serv-img{
+	/*display:block;*/
+	/*width: 0%;*/
+	/*display: inline-block;*/
 }
 
 hr{
@@ -160,7 +167,7 @@ hr{
 	margin: 0px 20px 0px 20px;
 }
 .serv-desc a{
-	font-size:22px;
+	font-size:20px;
 	text-decoration: none;
 	color: #333;
 
@@ -208,21 +215,23 @@ hr{
 	color: #ccc;
 }
 .carousel-desc {
-	margin-bottom: 50px;
-	font-size: 1.5rem;
+	margin:auto;
+	font-size: 20px;
 	font-style: italic;
 	line-height: 1.5;
 }
 
 .carousel-img {
-  	margin: 10px 10px;
+  	margin: 20px 10px;
+  	padding:20px;
 	width: 15%;
 	border-radius: 50%;
 }
 
 .testimonial-head {
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 	font-size: 3rem;
+	font-weight: 500;
 }
 
 
@@ -273,6 +282,7 @@ hr{
 }
 .contact-desc p {
 	line-height: 1.8;
+	font-size: 20px;
 
 }
 /* footer section*/
@@ -282,7 +292,7 @@ hr{
 }
 
 .widget h1 {
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: 600;
 	margin-bottom: 20px;
 
@@ -301,6 +311,10 @@ hr{
 .widget a {
    text-decoration: none;
 	color: #666;
+}
+.widget p{
+	font-size: 1rem;
+	font-weight: 700;
 }
 .sub-footer {
 	padding:10px 0px; 
@@ -396,13 +410,129 @@ hr{
 }
 */
 
-@media(max-width: 768px){
- 	
- 	.serv-img{
- 		display: none;
- 	}
- 	.serv-icon-desc {
- 		width: 100%;
+@media(min-width: 1024px){
+
+	.serv-icon .fa{
+
+	font-size: 35px;
+	float: left;
+	box-sizing: content-box;
+	margin: 0px 10px 0px 10px;
+	}
+	.serv-desc a{
+		font-size:20px;
+
+	}
+	.carousel-img{
+	width: 10%;
+	}
+
+}
+
+@media(min-width: 769px)and (max-width: 1023px){
+
+	.serv-img {
+		overflow: hidden;
+	}
+	.serv-heading ,.testimonial-head{
+ 		font-size: 2rem;
  	}
 
 }
+
+@media(max-width: 768px){
+ 	
+ 	.panel {
+ 		margin-top: 20px;
+ 	}
+ 	.serv-img{
+ 		display: none;
+ 	}
+ 	.serv-heading ,.testimonial-head{
+ 		font-size: 2rem;
+ 	}
+ 	.carousel-desc {
+ 	 		font-size: 18px;
+ 	 		padding: 0px;
+ 	 }
+ 	  .widget h1 {
+    	font-size: 18px;
+    	margin-top: 10px;
+    }
+    .widget p {
+    	font-size: 14px;
+    	font-weight: bold;
+    }
+	.btn-app {
+			font-size: 14px;
+	}
+
+.fa-facebook {    
+   
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+}
+.fa-twitter {
+ 	padding: 10px 15px 10px 15px;  
+    font-size: 16px;
+}
+.fa-instagram {
+    
+    font-size: 16px;
+    padding: 10px 12px 10px 12px;
+}
+.link-hospital{
+	display: block;
+}
+
+}
+@media(max-width: 468px){
+ 	
+ 	.serv-desc a{
+ 		font-size: 18px;
+ 	}
+ 	.carousel-img {  	
+		width: 30%;	
+	}
+	.serv-box{
+		margin-top: 20px;
+	}
+	.contact .nav-link{
+		font-size: 12px;
+		padding: 0px;
+	}
+	.top-area{
+		position: relative;
+		/*padding-bottom: 60px;*/
+
+	}
+	.btn-app {
+			font-size: 10px;
+			position: absolute;
+			right: 160px;
+			/*top: 60px;*/
+			margin: auto;
+	}
+
+	.fa-facebook ,.fa-instagram ,.fa-twitter {    
+    	font-size: 12px;
+
+		}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
