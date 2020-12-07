@@ -1,39 +1,42 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 body {
-	font-family: 'Ubuntu', sans-serif;
+	/*font-family: 'Nobile', sans-serif;*/
+	/*font-family:'Grandstander' 'Ubuntu', sans-serif;*/
+	font-family: 'Asap', sans-serif;
 	color: #333;
 	line-height: 1.5;
-	font-weight: 600;
+	/*font-weight: 500;*/
 	font-size: 16px;
 	background-color: #ddd;
-/*	width: 100%;
-	height: 100%;*/
 	padding: 0px;
 	margin: 0px;
 }
 a {
 	text-decoration: none;
+	font-weight: 700;
 }
 
 li {
 	list-style-type: none;
 }
 
-h1{
-	font-weight: 500; 
-}
-.main-head {
-	/*font-family: 'Grandstander', cursive;*/
-	font-weight: 700;
-	font-size: 2rem;
+.header111 {
+	background-image: url("img/dummy/bg1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 700px;
 }
 .navbar {
-	padding: 0.5rem 0rem;
+	padding: 0.1rem 0rem;
 }
 
 .top-area {
 	width: 100%;
 	background-color: #3fbbc0;
-	padding: 10px 20px;	
+	padding: 10px 10px;	
+	min-height: 60px;
 }
 
  .top-area a {
@@ -44,6 +47,22 @@ h1{
  .contact a {
  	float: left;
  }
+ .contact a:hover {
+ 		color: #4ACCD1;
+ }
+small{
+	color: white;
+	font-weight: 700;
+	position: absolute;
+	margin-top: 10px;
+}
+  .logo {
+ 	width: 10%;
+ 	height: 10%; 
+ 	margin-left: 20px;
+ 	margin-right: 5px;
+ }
+ 
  .btn-skin {
  	background-color: #4ACCD1;
  	color: white;
@@ -81,12 +100,9 @@ h1{
     padding: 10px 12px 10px 12px;
 }
  .btn-skin:hover{
- 
- 	background-color: grey;
+ 	background-color: #3fbbc0;
  }
- .navbar-header {
- 	padding: 10px;
- }
+
  .navbar-light .navbar-brand {
     color: #333;
 }
@@ -101,7 +117,9 @@ h1{
  .navbar-header-head a{
  	text-decoration: none;
  	font-size: 18px;
+ 	display: flex;
  	color: #3fbbc0;
+ 	margin-left: 55px;
  }
  .navbar-nav a{
  	color: #666;
@@ -112,39 +130,75 @@ h1{
   .navbar-nav a:hover{
   	color: #3fbbc0;
   }
-
+ 
 /* intro section*/
 
 #intro {
-	padding:50px 0px 50px 0px; 
-	background-image: url("img/dummy/bg1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+	/*min-height: 300px;*/
+	padding:80px 0px 50px 0px; 
+	/*text-align: center;*/
 }
-.intro-desc p {
-	border:1px solid transparent;
-	padding: 30px;
-	background-color: white;
+.btn-app{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	margin: 10px auto;
+ 	font-size: 16px !important;
+ }
+.card a{
 	color: black;
-	line-height: 1.8;
-	font-size: 16px;
+	text-decoration: none;
+}
+.card {
+	background-color: transparent;
+	/*border:1px solid grey;*/
+	padding: 10px;
+	margin: 10px auto;
+	width: 50%;
+	border-radius: 5px;
 }
 
+.main-head {
+	/*font-family: 'Grandstander';*/
+	font-weight: 800;
+	font-size: 2.5rem;
+	margin-bottom:50px;
+}
+.intro-desc p{
+	border:1px solid transparent;
+	padding: 50px;
+	/*background-color: white;*/
+	color: black;
+	font-size: 18px;
+	/*height: 2px;*/
+}
+
+.intro-desc {
+    /*width: 80%;*/
+      margin: auto;
+      background-color: white;
+	line-height: 1.8;
+	padding: 50px;
+	border-radius: 5px;
+}
+.card .fas, .far{
+	font-size: 25px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.boxxx{
+	margin-top: 60px;
+}
 /* services section*/
 #services {
 	padding:80px 0px 20px 0px;
-	/*min-height: 500px; */
-	background-color: #fff;
-}
-.serv-img{
-	/*display:block;*/
-	/*width: 0%;*/
-	/*display: inline-block;*/
+	background-color: white;
 }
 
 hr{
 	width: 20%;
 	padding:0px;
+	margin: 0px;
 	color: #ccc;
 	
 }
@@ -154,26 +208,46 @@ hr{
 	font-weight: 700;
 	padding: 20px 0px;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
-.serv-box {
-	margin-bottom: 20px;
+.serv-icon img{
+	border-radius: 12px;
+    color: #4ACCD1;
+     margin: 40px auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 1s ; 
 }
-.serv-icon .fa{
-	background-color: #fff;
-	color: #4ACCD1;
-	font-size: 45px;
-	float: left;
-	margin: 0px 20px 0px 20px;
+.serv-icon img:hover{
+	background-color: #4ACCD1;
+	/*color: white;*/
 }
 .serv-desc a{
 	font-size:20px;
 	text-decoration: none;
 	color: #333;
-
+	margin-bottom: 30px;
+	text-align: center;
 }
-.serv-icon-desc {
-	margin-top: 30px;
+.serv-desc p{
+	font-size:18px;
+	text-decoration: none;
+	color: #333;
+	margin-top: 20px;
+	margin-bottom:50px;
+	text-align: center;
+}
+.serv-desc{
+	/*width: 50%;*/
+	margin: auto;
+}
+.comma img {
+	color:white;
+	margin-right: 5px;
+	background-color: grey;
 }
 
 /*#testimonials {
@@ -214,11 +288,14 @@ hr{
 	text-align: center;
 	color: #ccc;
 }
+.carousel-inner{
+	width: 80%;
+}
 .carousel-desc {
 	margin:auto;
 	font-size: 20px;
 	font-style: italic;
-	line-height: 1.5;
+	line-height: 1.8;
 }
 
 .carousel-img {
@@ -285,7 +362,8 @@ hr{
 	font-size: 20px;
 
 }
-/* footer section*/
+
+/*/*--------------------- footer section*---------------/*/
 #footer {
 	padding: 50px 0px;
 	background-color: #fff;
@@ -293,15 +371,10 @@ hr{
 
 .widget h1 {
 	font-size: 22px;
-	font-weight: 600;
+	font-weight: 700;
 	margin-bottom: 20px;
-
 }
-.widget p {
-	font-size: 20px;
-	font-weight: 400;
 
-}
 .widget ul {
 	padding-left: 0px;
 }
@@ -312,9 +385,13 @@ hr{
    text-decoration: none;
 	color: #666;
 }
+.widget .fa-lg{
+	cursor: pointer;
+}
 .widget p{
 	font-size: 1rem;
 	font-weight: 700;
+	color: #666;
 }
 .sub-footer {
 	padding:10px 0px; 
@@ -323,207 +400,42 @@ hr{
 .sub-footer-p {
 	float: right;
 }
-
-/*@media (max-width: 900px){
-	
-	.link-hospital ,.btn-app  ,.serv-icon{
-		font-size: 10px;
-	}
-	.btn-app{
-		position: absolute;
-		top: 20px;
-		right: 120px;
-	}
-	.serv-img {
-		overflow: hidden;
-		display: none;
-
-	}
-	.top-area{
-		padding:5px;
-	}
-	.top-area a{
-		font-size: 12px;
-	}
-	.fa.fa-style{
-		font-size: 12px;
-		padding: 10px;
-	}
-	.serv-desc a{
-		font-size: 18px;
-		margin-right: 5px;
-	}
-	.carousel-head{
-		padding: 0px;
-	}
-
-   p , .contact-desc ,.serv-desc{
-   	font-size: 14px;
-   }
-   
-   #intro {
-   	padding-top: 10px;
-   }
-    #services{
-    	padding: 10px 0px;
-    }
-    #contact {
-    	padding: 20px 0px;
-    }
-    #testimonials {
-    	padding-bottom: 40px;
-    	
-    }
-    .carousel-desc {
-
-	font-size: 18px;
-	word-spacing: 1px;
-	
-	}
-	
-    .widget {
-    	padding-bottom:40px;
-    }
-    .widget h1 {
-    	font-size: 18px;
-    }
-    .widget p {
-    	font-size: 14px;
-    	font-weight: bold;
-    }
-
-	.testimonial-head, .contact-main-head ,.contact-head, .serv-heading{
-		font-size: 2rem;
-		padding: 10px 0px;
-	}
-	.serv-heading {
-		
-		padding: 20px 0px;
-	  }
-	  .carousel-head{
-	  	font-size: 18px;
-	  }
-
-	  .carousel-img {
-	  	width: 30%;
-	  }
+ .social-icons-footer .fa{
+ 	background-color: white;
+ }
+.navbar-toggler{
+	/*color: red;*/
 }
-*/
-
-@media(min-width: 1024px){
-
-	.serv-icon .fa{
-
-	font-size: 35px;
-	float: left;
-	box-sizing: content-box;
-	margin: 0px 10px 0px 10px;
+.navbar-toggler-icon{
+		/*color: black;*/
 	}
-	.serv-desc a{
-		font-size:20px;
-
-	}
-	.carousel-img{
-	width: 10%;
-	}
-
-}
-
-@media(min-width: 769px)and (max-width: 1023px){
-
-	.serv-img {
-		overflow: hidden;
-	}
-	.serv-heading ,.testimonial-head{
- 		font-size: 2rem;
- 	}
-
-}
 
 @media(max-width: 768px){
- 	
- 	.panel {
- 		margin-top: 20px;
- 	}
- 	.serv-img{
- 		display: none;
- 	}
- 	.serv-heading ,.testimonial-head{
- 		font-size: 2rem;
- 	}
- 	.carousel-desc {
- 	 		font-size: 18px;
- 	 		padding: 0px;
- 	 }
- 	  .widget h1 {
-    	font-size: 18px;
-    	margin-top: 10px;
-    }
-    .widget p {
-    	font-size: 14px;
-    	font-weight: bold;
-    }
-	.btn-app {
-			font-size: 14px;
+	.social-icons{
+		display: none;
 	}
-
-.fa-facebook {    
-   
-    font-size: 16px;
-    padding: 10px 15px 10px 15px;
-}
-.fa-twitter {
- 	padding: 10px 15px 10px 15px;  
-    font-size: 16px;
-}
-.fa-instagram {
-    
-    font-size: 16px;
-    padding: 10px 12px 10px 12px;
-}
-.link-hospital{
-	display: block;
+	.phy-img{
+		display: none;
+	}
+	.physio-logo{
+		width: 10px;
+		height: 10px;
+	}
+	.link-hospital{
+		display: block;
+		margin-left: 10px;
+	}
+	.navbar-toggler-icon:hover{
+		border:1px solid black;
+		border-radius: 10px;
+	}
 }
 
-}
 @media(max-width: 468px){
- 	
- 	.serv-desc a{
- 		font-size: 18px;
- 	}
- 	.carousel-img {  	
-		width: 30%;	
+	.link-hospital{
+		display: block;
 	}
-	.serv-box{
-		margin-top: 20px;
-	}
-	.contact .nav-link{
-		font-size: 12px;
-		padding: 0px;
-	}
-	.top-area{
-		position: relative;
-		/*padding-bottom: 60px;*/
-
-	}
-	.btn-app {
-			font-size: 10px;
-			position: absolute;
-			right: 160px;
-			/*top: 60px;*/
-			margin: auto;
-	}
-
-	.fa-facebook ,.fa-instagram ,.fa-twitter {    
-    	font-size: 12px;
-
-		}
-
-
 }
-
-
-
 
 
 

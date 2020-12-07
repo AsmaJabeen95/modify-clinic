@@ -1,177 +1,269 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
 
 	 <!-- Font awesom -->
+	<script src="https://kit.fontawesome.com/0b4a96f8c7.js" crossorigin="anonymous"></script>
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	      <!-- Google Fonts -->
+  	<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Ubuntu:wght@400&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Ubuntu:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  	     <!-- Style sheets -->
+  	<link rel="stylesheet" type="text/css" href="style.css">
 
 
 	<title>Prac-Clinic</title>
 </head>
 <body>
-	<!-- <div class="container header"> -->
-	<nav class="navbar  navbar-light bg-light" role= "navigation">
-		<div class="top-area">
+	<div class=" header111">
+<!-- Modal -->
+<div class="modal fade" id="makeAnAppointment" tabindex="-1" role="dialog" aria-labelledby="makeAnAppointmentCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="makeAnAppointmentLongTitle">Contact Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="panel">
+				<div class="panel-heading">
+					<h1><i class="far fa-edit"></i> Make an Appointment</h1>
+				</div>
+				<div class="panel-body">
+					<form class="frm">
+						<div class="row">
+						<div class="form-group  col-md-6 col-sm-6 col-xs-6">
+							<label class="form">First Name</label>
+							<input class="form-control" type="text" name="">
+						</div>
+						<div class="form-group  col-md-6 col-sm-6 col-xs-6">
+							<label class="form">Last Name</label>
+							<input class="form-control" type="text" name="">
+						</div>
+						</div>
+						<div class="row">
+						<div class="form-group  col-md-6 col-sm-6 col-xs-6">
+							<label class="form">Email</label>
+							<input class="form-control" type="text" name="">
+						</div>
+
+						<div class="form-group  col-md-6 col-sm-6 col-xs-6">
+							<label class="form">Phone No</label>
+							<input class="form-control" type="text" name="">
+						</div>
+						</div>
+						<input type="submit" value="submit" name="submit" class="btn btn-block btn-primary btn-lg btn-skin" >
+
+					</form>
+				</div>
+			</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<!-- <div class="top-area">
 		 <div class="contact"> 
 			<a href="" class="nav-link"><i class="fas fa-phone-alt"></i>
-            + 9130008244 Call us now </a>
+            + 9130008244 </a> <small>Call us now </small>
           </div>
+	         <div class="social-icons">
 	          <a href="#" class="fa fa-facebook fa-style nav-link"></a>
 	          <a href="https://www.facebook.com" class="fa fa-twitter fa-style nav-link"></a>
 	          <a href="#" class="fa fa-instagram fa-style nav-link"></a>
-	          <a href="#" class="nav-link"> <input type="submit" class="btn btn-skin  btn-app " name="" value="MAKE AN APPOINTMENT"></a>
+	         	
+	         </div>
+	         <button class="btn btn-skin btn-app" data-toggle="modal" data-target="#makeAnAppointment">MAKE AN APPOINTMENT</button>
 		</div>
-
-	<div class="container navbar-expand-lg navbar-header ">
+ -->
+	<nav class="navbar navbar-expand-lg">
 	<div class=" navbar-header-head">
-	<h1 class="navbar-brand" href="#">HyperPhysio</h1>
-	<a href="https://www.drshekhar.in"><span class="link-hospital">COLLABORATION WITH SHEKHAR HOSPITAL</span></a>
+		<img class="logo" src="img/physio-logo.png" alt="logo">
+		<h1 class="navbar-brand" href="#">HyperPhysio</h1>
+		<a href="https://www.drshekhar.in"><span class="link-hospital">COLLABORATION WITH SHEKHAR HOSPITAL</span></a>
 	</div>
-
-
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 	</button>
-
 	<div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
-	<ul class="nav navbar-nav ml-auto">
-	<li><a href="#intro">HOME</a></li>
-	<li><a href="#services">SERVICES</a></li>
-	<li><a href="#testimonials">TESTIMONIALS</a></li>
-	<li><a href="#contact">CONTACT US</a></li>	     
-	</ul>
+		<ul class="navbar-nav ml-auto">
+			<li><a href="#intro">HOME</a></li>
+			<li><a href="#services">SERVICES</a></li>
+			<li><a href="#testimonials">TESTIMONIALS</a></li>
+			<li><a href="#contact">CONTACT US</a></li>	     
+		</ul>
     </div>
-</div>
+
 </nav>
-<!-- </div> -->
+		  <!----------- nav-bar close ----------->
+
+          <!---------- Intro Section ---------->
 <section id="intro">
-<div class="container">
-	<div class="row">
-		<div class="col-lg-6">
-			<h1 class="main-head">Dr. Syed Mohib(PT)</h1>
-			<div class="intro-desc">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h1 class="main-head">Dr. Syed Mohib (PT)</h1>
+			<div class="intro-desc">			
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<button class="btn btn-skin btn-app " data-toggle="modal" data-target="#makeAnAppointment">MAKE AN APPOINTMENT</button>
+			
 			</div>
+			</div>
+			<div class="col-lg-6 boxxx">
+			<div class="container my-5">		
+		
+			<div class="card">
+			<div class="card-body p-0 text-center">
+			<div class="card-icon text-grey mb-6 mt-6">
+				<i class="fas fa-phone-alt"></i>
+				 </div>
+			<div class="fs-1 lh-1  font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-grey">Contact phone</div><p class="mb-0 text-grey font-weight-bold ">9130008244</p></div></div>
+		
+			<div class="card"><div class="card-body p-0 text-center"><div class="card-icon text-grey mb-6"><i class="far fa-envelope"></i> </div><div class="fs-1 lh-1font-family-secondary text-uppercase font-weight-bold letter-spacing-caption">Mail</div><p class="mb-0 text-grey font-weight-bold ">MAKE AN APPOINTMENT</p></div></div>
+
+			<div class="card "><div class="card-body p-0 text-center"><div class="card-icon text-grey mb-6"><i class="fas fa-map-marker-alt"></i> </div><div class="fs-1 lh-1font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-grey">Our Location</div><p class="mb-0 text-grey font-weight-bold ">NAGPUR</p></div></div>
+
+			</div>	
 		</div>
-		<div class="col-lg-6">
-			<img src="">
-		</div>
-	</div>	
-</div>	
+	</div>
+					
 </section>
+</div>
+			<!-- ----------Services----------- -->
 
 <section id="services">
-	<div class="container">
-		<h1 class="serv-heading">Our Services</h1>
-		<hr>
-		<div class="row">
-			<div class="serv-img col-md-6 col-sm-6">
-				<img class="img-responsive" src="img/slides/slide3/img1.png">
-				
+<h1 class="serv-heading">Our Services</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-md-6 col-sm-6 col-12  text-center">
+			<div class="serv-icon">
+				<img src="img/7.png" class="img-fluid" width="100" height="100">
+				<!-- <i class="fa fa-plus-square" aria-hidden="true"></i> -->
 			</div>
+			<div class="serv-desc">
+				<a href="">Orthopedic Physiotherapy</a>
+				<p>Our physical therapy treatments are in line with current practices and research and incorporate many different types of physical therapy, including hands-on manual therapy.
+				 <!-- therapeutic and functional exercise training. -->
+				 <!-- and movement retraining and pain management techniques. -->
+				</p>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
+			<div class="serv-icon">
+				<img src="img/1.jpg" class="img-fluid" width="100" height="100">
+				<!-- <i class="fa fa-plus-square" aria-hidden="true"></i> -->
+			</div>
+			<div class="serv-desc">
+				<a href="">Geriatric Physiotherapy</a>
+				<p> A unique focus on older adults, support of a Quality Assurance and evidence-based approaches equal clinical excellence in practice.
+		<!-- 		 HyperPhysio assess and address the various components of patients’ mobility and seek to improve their quality of life.  -->
+				<!-- Therapy is provided in the comfort of the patient’s home environment and specifically addresses any difficulties in daily routine. -->
+			</p>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 col-12  text-center">
+			<div class="serv-icon">
+				<img src="img/2.png" class="img-fluid" width="100" height="100">
+				<!-- <i class="fa fa-plus-square" aria-hidden="true"></i> -->
+			</div>
+			<div class="serv-desc">
+				<a href="">Neurological Physiotherapy</a>
+				<p>Diseases, trauma or injury involving the brain, spine and/or nerves may result in weakness, balance problems, stiffness, pain, dizziness and/or lack of coordination. 
+				<!-- All of these problems may impact walking, contribute to falls, impair movement and limit an individual’s ability to complete activities at home, work and within the community. -->
+			</p>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 col-12  text-center">
+			<div class="serv-icon">
+				<img src="img/4.png" class="img-fluid" width="100" height="100">
+				<!-- <i class="fa fa-plus-square" aria-hidden="true"></i> -->
+			</div>
+			<div class="serv-desc">
+				<a href="">Pre-Post Physiotherapy</a>
+				<p>Many people understand the need for physical therapy after surgery. However, did you know that physical therapy could be important even before surgery? 
+				<!-- It is important to be as strong and mobile as possible up until the day of surgery. -->
+			</p>
+			</div>
+		</div>
 		
-				<div class=" serv-icon-desc col-md-3 col-sm-6 col-xs-12">
-
-					<div class="serv-box">
-						<div class="serv-icon">
-						<i class="fa fa-plus-square" aria-hidden="true"></i>
-						</div>
-					<div class="serv-desc">
-						<a href="">Orthopedic Physiotherapy</a>
-					</div>
-					</div>
-					<div class="serv-box">
-					<div class="serv-icon">
-						<i class="fa fa-plus-square" aria-hidden="true"></i>
-					</div>
-					<div class="serv-desc">
-						<a href="">Neurological Physiotherapy</a>		
-					</div>
-					</div>					
-					<div class="serv-box">
-					<div class="serv-icon">
-						<i class="fa fa-plus-square" aria-hidden="true"></i>
-					</div>
-					<div class="serv-desc">
-						<a href="">Geriatric Physiotherapy</a>		
-					</div>
-					</div>
-					<div class="serv-box">
-					<div class="serv-icon">
-						<i class="fa fa-plus-square" aria-hidden="true"></i>
-					</div>
-					<div class="serv-desc">
-						<a href="">Cardiopulmonary Rehab</a>		
-					</div>
-					</div>
-				</div>
-			
-				<div class=" serv-icon-desc col-md-3 col-sm-6 col-xs-12">
-					<div class="serv-box">
-					<div class="serv-icon">
-						<i class="fa fa-plus-square" aria-hidden="true"></i>
-					</div>
-					<div class="serv-desc">
-						<a href="">Pre/Post Operative Rehab</a>		
-					</div>
-					</div>
-					<div class="serv-box">
-					<div class="serv-icon">
-						<i class="fa fa-plus-square" aria-hidden="true"></i>
-					</div>
-					<div class="serv-desc">
-						<a href="">Home Physiotherapy</a>		
-					</div>
-					</div>					
-					<div class="serv-box">
-					<div class="serv-icon">
-						<i class="fa fa-plus-square" aria-hidden="true"></i>
-					</div>
-					<div class="serv-desc">
-						<a href="">Sports Physiotherapy</a>		
-					</div>
-					</div>
-					<div class="serv-box">
-					<div class="serv-icon">
-						<i class="fa fa-plus-square" aria-hidden="true"></i>
-					</div>
-					<div class="serv-desc">
-						<a href="">TeleHealth</a>		
-					</div>
-					</div>
-				</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 col-md-6 col-sm-6 col-12  text-center">
+			<div class="serv-icon">
+				<img src="img/5.jpg" class="img-fluid" width="100" height="100">
+				<!-- <i class="fa fa-plus-square" aria-hidden="true"></i> -->
 			</div>
-	     <div>
+			<div class="serv-desc">
+				<a href="">Home Physiotherapy</a>
+				<p>Orthopedic physical therapy is a treatment that focuses on improving the function of your orthopedic system—those very important muscles, bones, joints, tendons, and ligaments.</p>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 col-12  text-center">
+			<div class="serv-icon">
+				<img src="img/3.png" class="img-fluid" width="80" height="80">
+				<!-- <i class="fa fa-plus-square" aria-hidden="true"></i> -->
+			</div>
+			<div class="serv-desc">
+				<a href="">Cardiac Physiotherapy</a>
+				<p>Cardiopulmonary rehabilitation is an area of practice that    focuses on the evaluation and treatment of individuals with acute and chronic heart and lung disease. <!-- At RA Physical Therapy, we work in conjunction with board-certified pulmonologists (i.e. lung specialists) to help individuals with chronic respiratory disorders gain control over their breathing and improve their pulmonary function. --></p>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 col-12  text-center">
+			<div class="serv-icon">
+				<img src="img/8.png" class="img-fluid" width="100" height="100">
+				<!-- <i class="fa fa-plus-square" aria-hidden="true"></i> -->
+			</div>
+			<div class="serv-desc">
+				<a href="">TeleHealth Physiotherapy</a>
+				<p> Telehealth Video Visits are now an ideal option for many patients from HyperPhysio Services, especially with the spread of COVID-19 impacting so much of daily life. <!--  As healthcare providers, we will remain available to accommodate our patient’s needs for physical therapy and fitness classes. --></p>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 col-12  text-center">
+			<div class="serv-icon">
+				<img src="img/6.png" class="img-fluid" width="120" height="120">
+			<!-- 	<i class="fa fa-plus-square" aria-hidden="true"></i> -->
+			</div>
+			<div class="serv-desc">
+				<a href="">Sports Physiotherapy</a>
+				<p> Whether you’re a competitive athlete or a weekend warrior, soreness, pain and injury can quickly derail your efforts to reach your fullest potential. <!-- So when sports injuries happen, your goal is to heal quickly, safely, and get back to the top of your game with an eye toward preventing future i -->njuries.</p>
+			</div>
+		</div>
+	</div>
+</div>
  </section>
-
-
-
- 
+ 				<!----------- Testimonials =----------->
 <section id="testimonials">
-	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-		<h1 class="testimonial-head">Testimonials</h1>
-  <div class="carousel-inner">
+	
+	<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+		
+		<h1 class="testimonial-head "><img src="img/comma1.png" width="50" height="50" class="comma">Testimonials</h1>
+  	<div class="carousel-inner container">
 
-    <div class="carousel-item active container-fluid">
+    <div class="carousel-item active ">
     	<h5 class="carousel-desc"> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</h5>
       <img class="carousel-img" src="img/dummy/img-1.jpg" alt="First slide">
       <em>PAUL</em><br>
-       <i class="fas fa-star"></i>
+       <i class="fas fa-comma"></i>
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
       
@@ -182,7 +274,6 @@
       <img class="carousel-img" src="img/dummy/img-1.png" alt="First slide">
       <em>ASMA</em><br>
       <i class="fas fa-star"></i>
-      <i class="fab fa-star"></i>
        <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
@@ -330,7 +421,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<h1 class="contact-main-head">HyperPhysio</h1>
-				<h2 class="cntct-head">Provide <span class="contact-head">best quality healthcare </span> for you</h2>
+				<h2 class="cntct-head">Provide <span class="contact-head">best Physiotherapy </span> for you</h2>
 				<p class="contact-desc">              
 	            We treat all types of orthopedic disorders, ranging from pain to weakness to stiffness and instability.
 	            Our physical therapy treatments are in line with current practices and research and incorporate many different types of physical therapy, including hands-on manual therapy, therapeutic and functional exercise training, and movement retraining and pain management techniques.
@@ -406,6 +497,12 @@
                    </span> asmajabeen00@gmail.com
                   </li>
                 </ul>
+                   <div class="social-icons-footer">
+		          <a href="#" class="fa fa-facebook fa-style nav-link"></a>
+		          <a href="https://www.facebook.com" class="fa fa-twitter fa-style nav-link"></a>
+		          <a href="#" class="fa fa-instagram fa-style nav-link"></a>
+	         	
+	         </div>
 			</div>
 			</div>
 		</div>
